@@ -7,6 +7,7 @@ const signin = ({ setIsLogin }) => {
         <h2>Sign In</h2>
         <input type="email" id="email" placeholder='Email' required />
         <input type="password" id="password" placeholder='Password' required />
+        <p><a href="#">Forgot Password?</a></p>
         <button type="submit">Login</button>
         <p>Don't have an account? <a type="button" onClick={() => setIsLogin(false)}>Sign Up</a></p>
     </form>
