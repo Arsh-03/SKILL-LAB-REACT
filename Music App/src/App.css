@@ -1,0 +1,130 @@
+/* Global Styles */
+:root {
+  --bg-dark: #121212;
+  --bg-secondary: #1e1e1e;
+  --accent-color: #0dcaf0;
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Home / Sign-in Page Styles */
+.signin-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-dark);
+}
+
+.signin-card {
+  background-color: var(--bg-secondary);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.signin-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.signin-header i {
+  color: var(--accent-color);
+  font-size: 3rem;
+}
+
+.signin-header h2 {
+  font-weight: 800;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.signin-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.custom-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: #2a2a2a;
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background-color: #333;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: var(--accent-color);
+  color: #000;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.signin-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.signin-btn:active {
+  transform: translateY(0);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.signup-link a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
