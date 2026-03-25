@@ -1,0 +1,79 @@
+/* Container for the entire Quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* List styling for options */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Base style for each option (li) */
+li {
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Hover effect for unselected options */
+li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Step 13: Highlighted style for the selected option [cite: 163, 171] */
+.selected {
+    background-color: #b3e5fc;
+    border: 1px solid #03a9f4;
+    font-weight: bold;
+}
+
+/* Step 14: Styling for the Next Button [cite: 180] */
+.button {
+    background-color: #0dbc72;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 40%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #0a9d5f;
+}
+
+/* Step 14: Styling for the Disabled Button [cite: 180] */
+.button-disable {
+    background-color: #cccccc;
+    color: #666666;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 40%;
+    cursor: not-allowed;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Score display styling [cite: 240] */
+.score-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
